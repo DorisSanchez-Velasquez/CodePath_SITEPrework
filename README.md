@@ -3,11 +3,13 @@
 
 **Memory Game** is a Light & Sound Memory game to apply for CodePath's SITE Program. 
 
-Submitted by: **NAME**
+Submitted by: **Doris Sanchez Velasquez**
 
-Time spent: **#** hours spent in total
+Time spent: **6** hours spent in total
 
-Link to project: (insert your link here, should start with https://glitch.com...)
+Link to project: 
+Code:(https://glitch.com/edit/#!/simplememory-game)
+Live Website:(https://simplememory-game.glitch.me)
 
 ## Required Functionality
 
@@ -84,7 +86,7 @@ Game Speeds Up After Each Sequence
 
 ## License
 
-    Copyright [YOUR NAME]
+    Copyright [Doris Sanchez Velasquez]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
