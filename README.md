@@ -57,7 +57,7 @@ Lives are lost when Mistake Made
 Points Updated
 ![x](http://g.recordit.co/sj6SyQeC7a.gif)
 
-Game Speeds Up
+Game Speeds Up After Each Sequence
 ![x](http://g.recordit.co/wjqw5ftLv5.gif)
 
 ## Reflection Questions
