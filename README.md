@@ -8,7 +8,9 @@ Submitted by: **Doris Sanchez Velasquez**
 Time spent: **6** hours spent in total
 
 Link to project: 
+
 Code:(https://glitch.com/edit/#!/simplememory-game)
+
 Live Website:(https://simplememory-game.glitch.me)
 
 ## Required Functionality
