@@ -55,10 +55,10 @@ Lives are lost when Mistake Made
 ![x](http://g.recordit.co/mtuJvNr0lY.gif)
 
 Points Updated
-![x] (http://g.recordit.co/sj6SyQeC7a.gif)
+![x](http://g.recordit.co/sj6SyQeC7a.gif)
 
 Game Speeds Up
-![x] (http://g.recordit.co/wjqw5ftLv5.gif)
+![x](http://g.recordit.co/wjqw5ftLv5.gif)
 
 ## Reflection Questions
 1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here. 
