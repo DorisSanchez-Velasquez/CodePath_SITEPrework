@@ -1,3 +1,4 @@
+
 # Pre-work - *Memory Game*
 
 **Memory Game** is a Light & Sound Memory game to apply for CodePath's SITE Program. 
@@ -34,9 +35,10 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-- [x] Players earns points after completing each sequence correctly
-- [x] Different Audio is played each time player makes a mistake or earns a point
-- [x] Different Audio played when player wins or loses game 
+- [x] List anything else that you can get done to improve the app!
+- [x] After each sequence, points are updated when player completes correctly
+- [x] Audio changes when player makes a mistake or earns a point
+- [x] Audio played when player wins the game or losing game
 
 ## Video Walkthrough (GIF)
 

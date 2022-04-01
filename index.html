@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+    <!-- BOOTSTRAP CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"/>
+    
+    <title>PIXEL POP!</title>
+
+    <!-- IMPORT THE WEBPAGE'S STYLE SHEET -->
+    <link rel="stylesheet" href="/style.css" />
+    
+    <!-- IMPORT THE WEBPAGE'S JAVA SCRIPT FILE -->
+    <script src="/script.js" defer></script>
+  </head>
+  
+  
+  
+  <body>
+    <!-- THIS IS THE START OF THE CONTENT -->
+    <div id="titleHead">
+      <!-- FORMAT THE TOP PART OF THE WEBAPP USING CURATED LOGOS
+           Rather than inputting actual h1 tag for game title, input created logos. 
+           If fails to load, show alternative text instead-->
+      <!-- Small Image Logo --><img src="https://cdn.glitch.global/97e1665c-d09d-4fce-850e-acd771c82ad3/PixelPop_Logo.png?v=1648749109180" id="Logo">
+      <!-- Title Logo--><img src="https://cdn.glitch.global/97e1665c-d09d-4fce-850e-acd771c82ad3/PixelPop_WordLogo.png?v=1648825425673" id="titleLogo" alt="PIXEL POP" class="h1">
+      <img src="https://cdn.glitch.global/97e1665c-d09d-4fce-850e-acd771c82ad3/PixelPop_Logo.png?v=1648749109180" id="Logo2">
+    </div>
+    
+    
+    
+    <!--DESCRIPTION OF LIGHT AND SOUND GAME-->
+    <p>
+      Welcome to the Light and Memory Game! Repeat back the pattern by pressing buttons. Good Luck!
+    </p>
+    
+    
+    
+    <!-- MAIN CONTENT CODE (SCORE, TIMER, LIVES, AND START/STOP BUTTON)-->
+    <div id="mainData" class="row justify-content-center">
+
+      <!-- Keeps track of the current score-->
+      <h2 id="score" class="col-4 text-left">
+        CURRENT SCORE: <br>
+        <span id="points">0</span> POINTS
+      </h2>
+      
+      <!-- KEEPS TRACK OF THE START AND STOP BUTTONS-->
+      <button id="startBtn" onclick="startGame()">
+      <!-- When the start button is pressed, the game starts and a starting game sound is played to initialize.-->
+        <audio src="https://cdn.glitch.global/97e1665c-d09d-4fce-850e-acd771c82ad3/StartGame_Audio.wav?v=1648831355546" id="startGame"></audio>
+        START
+      </button>
+      
+      <!-- When the stop button is pressed, all functions of the game are stopped.-->
+      <button id="stopBtn" class="hidden" onclick="stopGame()">
+        STOP
+      </button>
+      
+      <!-- Keeps track of the timer and remaining lives-->
+      <h2 id="timerAttempts" class="col-4 text-right">
+        TIMER: <span id="timer">20</span> SECS<br>
+        LIVES: <span id="attemptsMade">3</span>
+      </h2>
+      
+    </div>
+    
+  
+    
+    <!-- GAME BUTTON FUNCTIONALITY-->
+    <div id="gameButtonArea1" class="row justify-content-center"> 
+    <!-- FIRST ROW OF GAME BUTTONS 1 THROUGH 4-->
+      <!-- Game Button 1-->
+        <button id="button1" onclick="guess(1)" onmousedown="startTone(1)" onmouseup="stopTone()">
+        <img src="https://cdn.glitch.global/97e1665c-d09d-4fce-850e-acd771c82ad3/redButton.png?v=1648826756373" class="starDecoration">
+        </button>
+      
+      <!-- Game Button 2-->
+        <button id="button2" onclick="guess(2)" onmousedown="startTone(2)" onmouseup="stopTone()">
+        <img src="https://cdn.glitch.global/97e1665c-d09d-4fce-850e-acd771c82ad3/yellowButton.png?v=1648826760147" class="starDecoration">
+        </button>
+      
+      <!-- Game Button 3-->
+        <button id="button3" onclick="guess(3)" onmousedown="startTone(3)" onmouseup="stopTone()">
+        <img src="https://cdn.glitch.global/97e1665c-d09d-4fce-850e-acd771c82ad3/purpleButton.png?v=1648826750974" class="starDecoration">
+        </button>
+      
+      <!-- Game Button 4-->
+        <button id="button4" onclick="guess(4)" onmousedown="startTone(4)" onmouseup="stopTone()">
+        <img src="https://cdn.glitch.global/97e1665c-d09d-4fce-850e-acd771c82ad3/greenButton.png?v=1648826737219" class="startDecoration">
+        </button>
+    </div>
+    
+    
+    <div id="gameButtonArea2" class="row justify-content-center">
+    <!-- SECOND ROW OF GAME BUTTONS 5 THROUGH 8-->
+      <!-- Game Button 5-->
+        <button id="button5" onclick="guess(5)" onmousedown="startTone(5)" onmouseup="stopTone()">
+        <img src="https://cdn.glitch.global/97e1665c-d09d-4fce-850e-acd771c82ad3/pinkButton.png?v=1648826744936" class="starDecoration">
+        </button>
+        
+      <!-- Game Button 6-->
+        <button id="button6" onclick="guess(6)" onmousedown="startTone(6)" onmouseup="stopTone()">
+        <img src="https://cdn.glitch.global/97e1665c-d09d-4fce-850e-acd771c82ad3/cyanButton.png?v=1648826732326" class="starDecoration">
+        </button>
+      
+      <!-- Game Button 7-->
+        <button id="button7" onclick="guess(7)" onmousedown="startTone(7)" onmouseup="stopTone()">
+        <img src="https://cdn.glitch.global/97e1665c-d09d-4fce-850e-acd771c82ad3/orangeButton.png?v=1648826740779" class="starDecoration">
+        </button>
+      
+      <!-- Game Button 8-->
+        <button id="button8" onclick="guess(8)" onmousedown="startTone(8)" onmouseup="stopTone()">
+        <img src="https://cdn.glitch.global/97e1665c-d09d-4fce-850e-acd771c82ad3/blueButton.png?v=1648826728169" class="starDecoration">
+        </button>
+    </div>
+    
+    
+    
+    <!-- AUDIO FILES USED THROUGHOUT THE GAME TO EMPHASIZE LOSING GAME, WINNING GAME, MISTAKES, AND POINTS GAINED-->
+    <!-- Mistakes Made-->
+    <audio src="https://cdn.glitch.global/97e1665c-d09d-4fce-850e-acd771c82ad3/MistakeMade_Audio.wav?v=1648831341044" id="mistakeMade"></audio>
+    
+    <!-- Game Won-->
+    <audio src="https://cdn.glitch.global/97e1665c-d09d-4fce-850e-acd771c82ad3/GameFinished_Audio.wav?v=1648831326024" id="gameFinished"></audio>
+    
+    <!-- Points Gained-->
+    <audio src="https://cdn.glitch.global/97e1665c-d09d-4fce-850e-acd771c82ad3/PointsAdded_Audio.wav?v=1648831349109" id="pointsGained"></audio>
+    
+    <!-- Game Over-->
+    <audio src="https://cdn.glitch.global/97e1665c-d09d-4fce-850e-acd771c82ad3/GameOver_Audio.wav?v=1648836071795" id="gameOver"></audio>
+    
+    
+    
+  <!-- END OF CONTENT-->  
+  </body>
+</html>
