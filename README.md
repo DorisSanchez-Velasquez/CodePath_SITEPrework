@@ -80,6 +80,8 @@ Implement Math.Random() for Pattern: https://developer.mozilla.org/en-US/docs/We
 Researching Bootstrap CSS: https://getbootstrap.com/docs/3.4/css/ 
 
 
+
+
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words) 
 
 The biggest challenge I encountered when creating this submission was finding a way to implement the clock setInterval and restart the timer countdown each time a new sequence was played until the player either loses or wins the game. I spent a lot of time researching how to implement set Interval and clear interval within the code and find a way to update it each time a clue sequence was played. However, when I initially implemented the setInterval instruction, I wrote the code within the start game function rather than in the playClueSequence() function. In this format, the program would only countdown once. Eventually, I implemented the function into playClueSequence and added a new function that would decrement the timer at the same time the user is playing the game. 
@@ -89,9 +91,13 @@ The next issue I faced was that the timer would either count down too quickly or
 Interestingly, my curiosity with implementing the timer continued to grow as I researched different ways the timer could be curated for larger scale projects specifically within game design development and animating elements using Javascript. At first, it seemed intimidating but researching the process more made me curious on how programming with such a small scale instruction has impacted the game development industry.
 
 
+
+
 3. What questions about web development do you have after completing your submission? (recommended 100 - 300 words) 
 
 How can you connect the front-end development programs with the back-end development tools within larger scale projects? How can you implement data analysis software and security software to these websites to protect the user better? What are some other technologies or languages a web developer should implement apart from HTML, CSS, and JavaScript when curating programs for mobile or desktop? What more can you do with JavaScript specifically on large scale projects? How can these languages be used to create more user interaction and accessibility? What are the most essential technical and interpersonal skills a front end developer should have? 
+
+
 
 
 4. If you had a few more hours to work on this project, what would you spend them doing (for example: refactoring certain functions, adding additional features, etc). Be specific. (recommended 100 - 300 words) 
