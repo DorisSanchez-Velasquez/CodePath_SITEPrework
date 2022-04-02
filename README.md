@@ -67,17 +67,37 @@ Game Speeds Up After Each Sequence
 ![x](http://g.recordit.co/wjqw5ftLv5.gif)
 
 ## Reflection Questions
-1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here. 
-[YOUR ANSWER HERE]
+1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here.
+ 
+Implementing Javascript Attributes: https://www.w3schools.com/js/js_intro.asp
+
+Researching setInterval: https://www.w3schools.com/jsref/met_win_setinterval.asp 
+
+Researching clearInterval: https://developer.mozilla.org/en-US/docs/Web/API/setInterval
+
+Implement Math.Random() for Pattern: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
+
+Researching Bootstrap CSS: https://getbootstrap.com/docs/3.4/css/ 
+
 
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words) 
-[YOUR ANSWER HERE]
+
+The biggest challenge I encountered when creating this submission was finding a way to implement the clock setInterval and restart the timer countdown each time a new sequence was played until the player either loses or wins the game. I spent a lot of time researching how to implement set Interval and clear interval within the code and find a way to update it each time a clue sequence was played. However, when I initially implemented the setInterval instruction, I wrote the code within the start game function rather than in the playClueSequence() function. In this format, the program would only countdown once. Eventually, I implemented the function into playClueSequence and added a new function that would decrement the timer at the same time the user is playing the game. 
+
+The next issue I faced was that the timer would either count down too quickly or the timer would not reset when the next clue sequence was played. I decided to research into implementing setInterval and clearInterval more thoroughly to gain a better understanding for my problem rather than attempting to determine a solution blindly. In doing so, I was able to implement the clearInterval instruction within the correct decrementTime() function where, if the time runs out, the timer is restarted and the game is stopped and, whenever a new clue sequence is played, the setInterval instruction is called upon in the playClueSequence as the timer begins to count down. 
+
+	Interestingly, my curiosity with implementing the timer continued to grow as I researched different ways the timer could be curated for larger scale projects specifically within game design development and animating elements using Javascript. At first, it seemed intimidating but researching the process more made me curious on how programming with such a small scale instruction has impacted the game development industry.
+
 
 3. What questions about web development do you have after completing your submission? (recommended 100 - 300 words) 
-[YOUR ANSWER HERE]
+
+How can you connect the front-end development programs with the back-end development tools within larger scale projects? How can you implement data analysis software and security software to these websites to protect the user better? What are some other technologies or languages a web developer should implement apart from HTML, CSS, and JavaScript when curating programs for mobile or desktop? What more can you do with JavaScript specifically on large scale projects? How can these languages be used to create more user interaction and accessibility? What are the most essential technical and interpersonal skills a front end developer should have? 
+
 
 4. If you had a few more hours to work on this project, what would you spend them doing (for example: refactoring certain functions, adding additional features, etc). Be specific. (recommended 100 - 300 words) 
-[YOUR ANSWER HERE]
+
+	Prior to completing this project, I was working on various personal projects specifically created to learn more about front end development tools and languages while providing more user interaction and accessibility. However, this project made me realize how much more I could learn and just how powerful HTML, CSS, and JavaScript can be when used together. If I had a few more hours to work on this project, my main focus would be to increase the user interaction with the game and implement certain features that made the game more personal to whomever is playing. For example, I would create another feature that allows the user to change how many buttons are displayed, control the speed of the clue sequences, and change the difficulty level of the game. In this way, the game would become more accessible as the user is able to control how difficult the game should be. In terms of accessibility separate from game functionality or visual appeal, I would implement screen reader features curated for users with visual impairments to read the instructions and a volume slider to the game so that the user can control how loud the tones of the buttons should be played. Additionally, I would add a feature that allows the game to be played with keyboard controls to provide accessibility to users with mobility impairments so that the user would not have to use a mouse to interact with the game.
+
 
 
 
